@@ -1,0 +1,57 @@
+.cabecalho_menu-hamburguer {
+    width:24px;
+    height: 24px;
+    background-image: url(../img/Menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    
+}
+.cabecalho {
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    background-color: var(--cor-de-fundo-categorias);
+    margin: 2em 0 0 0;
+    border-radius: 4px;
+}
+
+.container__cabecalho {
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+}
+
+.lista-menu {
+    display: none;
+    position:absolute;
+    top: 200%;
+    left: -300%;
+    background-color: #042E4D;
+    color: white;
+    z-index: 1;
+}
+.lista_menu-links {
+    text-decoration: none;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    padding-right: 1em;
+}
+.lista-menu__titulo{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+.container__botao:checked~.lista-menu {
+    display: block;
+}
+.container__botao {
+    display: none;
+}
+
+.lista-menu, 
+.lista-menu__items {
+    padding: 1em;
+}

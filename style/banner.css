@@ -1,0 +1,15 @@
+.banner__imagem {
+    width: 98vw;
+    margin-right: 0.4em;
+    margin-left: 0.2em;
+    margin-top: 0.5em;
+
+}
+.banner {
+    position: relative;
+    z-index: 0;
+}
+
+.swiper-scrollbar {
+    display: none;
+}

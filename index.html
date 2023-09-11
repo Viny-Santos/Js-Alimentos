@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link href="https: //fonts.googleapis.com/css2?family= família= Open+Sans:wght@400;500 &Roboto :wght@400;700 & display=swap" rel="stylesheet">
+</head>
+<body class="body">
+    <header class="cabecalho">
+        <img src="./img/logo.png" alt="logo_Js">
+        <div class="container__cabecalho">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo">
+                <span class="cabecalho_menu-hamburguer" class="container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">CATEGORIAS</li>
+                <li class="lista-menu__items">
+                    <a href="#" class="lista_menu-links">BACON</a>
+                </li>
+                <li class="lista-menu__items">
+                    <a href="#" class="lista_menu-links">LINGUIÇAS</a>
+                </li>
+                <li class="lista-menu__items">
+                    <a href="#" class="lista_menu-links">FRIOS</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="banner">
+        <div class="swiper1">
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <div class="banner__container">
+                    <img class="banner__imagem" src="./img/banner.jpg" alt="banne.img">
+                </div>
+                </div>
+            <div class="swiper-slide">
+                <div class="banner__container">
+                    <img class="banner__imagem" src="./img/banner.jpg" alt="banne.img">
+                </div>
+                </div>
+            <div class="swiper-slide">
+                <div class="banner__container">
+                    <img class="banner__imagem" src="./img/banner.jpg" alt="banne.img">
+                </div>
+            </div>
+            </div>
+         <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+      
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+      </div>
+    </section>
+      <section class="card"> 
+        <!-- Slider main container -->
+        <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+            <div class="card__produto">
+                <div class="card__descricao">
+                    <h2 class="descricao descricao__titulo">BACONIL EXTRA</h2>
+                </div>
+                <div class="card__descricao2">
+                    <p class="descriçao descricao__chamada">PEÇA JA O SEU</p>
+                    <a href="#"><img class="imagem_whatsap" src="./img/whatsapp.svg" alt="whatsapp"></a>
+                </div>
+                <img class="card__img" src="./img/tim.png" alt="foto-card">
+            </div>
+            </div>
+        <div class="swiper-slide">
+            <div class="card__produto">
+                <div class="card__descricao">
+                    <h2 class="descricao descricao__titulo"> 1</h2>
+                </div>
+                <div class="card__descricao2">
+                    <P class="descricao__produto">Disponível em peças fechadas</P>
+                    <p class="descriçao descricao__chamada">PEÇA JA O SEU</p>
+                    <a href="#"><img class="imagem_whatsap" src="./img/whatsapp.svg" alt="whatsapp"></a>
+                </div>
+                <img class="card__img" src="./img/tim.png" alt="foto-card">
+            </div>
+            </div>
+        <div class="swiper-slide">
+        <div class="card__produto">
+            <div class="card__descricao">
+                <h2 class="descricao descricao__titulo"> 2</h2>
+            </div>
+            <div class="card__descricao2">
+                <p class="descriçao descricao__chamada">PEÇA JA O SEU</p>
+                <a href="#"><img class="imagem_whatsap" src="./img/whatsapp.svg" alt="whatsapp"></a>
+            </div>
+            <img class="card__img" src="./img/tim.png" alt="foto-card">
+        </div>
+        </div>
+        </div>
+     <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+  
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+  </div>
+  <div class="swiper-pagination"></div>
+    </section>
+    <section class="rodape">
+        <footer class="rodape__pagina">
+            <ul class="rodape__list">
+                <li class="rodape_link"><img class="logo_rodape" src="./img/logo.png" alt="logo"></li>
+                <li class="rodape_link"> <h3>JS Alimentos</h3></li>
+                <li class="rodape_link"> <a href="#">Podutos</a></li>
+                <li class="rodape_link"> <h3>Atendimento</h3></li>
+                <li class="rodape_link"> <p>De segunda a sexta apartir das 08:00 a 20:00hrs</p></li>
+                <li class="rodape_link"> <a href="#">Política de Privacidade</a></li>
+                <li class="rodape_link" class="rodape_links"> <a href="#">Seja nosso Cliente</a></li>
+            </ul>
+
+        </footer>
+
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 1,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                           } ,
+                          
+        });
+
+        const swiper1 = new Swiper('.swiper1', {
+            spaceBetween: 10,
+            slidesPerView: 1,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'none',
+                           } ,
+                           autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+        });
+        
+    </script>
+
+   
+</body>
+</html>
